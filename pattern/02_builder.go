@@ -1,4 +1,4 @@
-package patterns
+package pattern
 
 /*
 Паттерн Builder определяет поэтапное создание экземпляра сложного объекта.
