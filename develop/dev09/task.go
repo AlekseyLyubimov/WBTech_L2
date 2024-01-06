@@ -16,10 +16,11 @@ import (
 */
 
 const downloadFolder = "download"
+const address = "https://www.bikeexif.com/"
 
 func main() {
 	mkdir(downloadFolder)
-	if numSaved, err := DownloadWebsite("https://www.bikeexif.com/"); err != nil {
+	if numSaved, err := DownloadWebsite(address); err != nil {
 		log.Fatalln("error downloading website: ", err.Error())
 	} else {
 		fmt.Println(numSaved)
